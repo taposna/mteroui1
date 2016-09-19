@@ -1,0 +1,36 @@
+﻿<Page x:Class="WpfApplication1.pgeStudent"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      xmlns:local="clr-namespace:WpfApplication1"
+      mc:Ignorable="d"
+      Title="pgeStudent" Width="1186.28" Height="683.245">
+    
+    <Border BorderThickness="2" BorderBrush="#FF00456A" CornerRadius="10" Background="White">
+        <Controls:MetroAnimatedTabControl>
+    <Grid>
+            <TabControl Margin="10,22,0,10">
+                    <TabItem Header="Student">
+                        <Grid>
+                            <Label Content="inabno" Margin="188,136,150,142" FontSize="72"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Student">
+                        <Grid>
+                            <Label Content="inabno2" Margin="188,136,150,142" FontSize="72"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Student">
+
+                </TabItem>
+                
+                <TabItem Header="Student">
+
+                </TabItem>
+            </TabControl>
+    </Grid>
+        </Controls:MetroAnimatedTabControl>
+    </Border>
+</Page>

@@ -1,0 +1,56 @@
+﻿<Controls:MetroWindow x:Class="WpfApplication1.windowLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowTitleBrush="#FF00456A"
+        ResizeMode="CanMinimize"
+        BorderBrush="{DynamicResource AccentColorBrush}"
+        BorderThickness="1"
+        Title="MainWindow" Height="504.774" Width="431.783" Background="#FF00456A">
+    <Window.Resources>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatButton.xaml" />
+    </Window.Resources>
+    <Grid>
+        <Grid Margin="0,0,0,215">
+            <Image  Source="images/new_logo1.png"/>
+        </Grid>
+        <Grid Margin="10,289,10,10">
+            <Border BorderBrush="#FF00B9D5" Background="#FF00456A" BorderThickness="2" CornerRadius="10">
+                <Grid Margin="36,-16,36,77">
+                    <Image Source="images/reg.png" Margin="2,20,-2,16"/>
+                    <Canvas Margin="-16,94,-16,-69">
+                        <Label Content="PASSWORD:" Canvas.Left="10" Foreground="white" Canvas.Top="12"/>
+                        <PasswordBox Width="260" Canvas.Left="90" Canvas.Top="12"/>
+                        <Button Content="LOG IN" Canvas.Left="248" Canvas.Top="50" Width="102" Height="25">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="White" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Grid Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Grid>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#FF037a93"/>
+                                            <Setter Property="Foreground" Value="#FFFFFFFF"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </Canvas>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>
