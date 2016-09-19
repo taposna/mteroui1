@@ -63,6 +63,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="pageEnlist.xaml.cs">
+      <DependentUpon>pageEnlist.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pgeStudent.xaml.cs">
       <DependentUpon>pgeStudent.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,10 @@
     <Compile Include="windowMain.xaml.cs">
       <DependentUpon>windowMain.xaml</DependentUpon>
     </Compile>
+    <Page Include="pageEnlist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pgeStudent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
