@@ -16,7 +16,30 @@
                         <Grid Margin="10,11,10,10">
                             <Canvas Margin="10,10,571,540">
                                 <TextBox Name="search_sub" Width="428"/>
-                                <Button Name="sub_search" Content="Search" Canvas.Left="435" Canvas.Top="1" Width="120"/>
+                                <Button Name="sub_search" Content="Search" Canvas.Left="435" Width="120" Height="26">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Background" Value="Transparent" />
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <Border BorderThickness="1" BorderBrush="gray" CornerRadius="2">
+                                                            <Grid Background="{TemplateBinding Background}">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                            </Grid>
+                                                        </Border>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#FF037a93"/>
+                                                    <Setter Property="Foreground" Value="#FFFFFFFF"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
                             </Canvas>
                             <DataGrid Margin="10,58,514,10">
                                 <DataGrid.Columns>
@@ -32,13 +55,19 @@
                                 </DataGrid.Columns>
                             </DataGrid>
                             <Grid Margin="655,58,10,0" Background="#FFF9F9F9">
-                                <Canvas Margin="10,29,274,460">
-                                    <TextBox Name="tb1" Width="187"/>
+                                <Canvas Margin="10,29,192,460">
+                                    <Label Name="Student_id" Content="Student ID:" FontSize="12" />
+                                    <TextBox Name="tb1" Width="187" Canvas.Left="78"/>
                                 </Canvas>
-                                <Canvas Margin="10,183,10,306">
+                                <Canvas Margin="0,91,0,398">
+                                    <Label Content="Subject Code:" Canvas.Left="10"/>
+                                    <Label Content="Description:" Canvas.Left="133"/>
+                                    <Label Content="Units:" Canvas.Left="415"/>
+                                </Canvas>
+                                <Canvas Margin="10,123,10,366">
                                     <TextBox Name="tb2" Width="115" Canvas.Top="2"/>
-                                    <TextBox Name="tb3" Width="241" Canvas.Left="120" Canvas.Top="2"/>
-                                    <TextBox Name="tb4" Width="85" Canvas.Left="366" Canvas.Top="2"/>
+                                    <TextBox Name="tb3" Width="274" Canvas.Left="120" Canvas.Top="2"/>
+                                    <TextBox Name="tb4" Width="52" Canvas.Left="399" Canvas.Top="2"/>
                                 </Canvas>
                             </Grid>
                         </Grid>
