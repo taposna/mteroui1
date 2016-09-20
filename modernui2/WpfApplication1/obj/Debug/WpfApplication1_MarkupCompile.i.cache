@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\App.xaml
-5-68851196
+71813706292
 
 13322189524
 151624627442
-pageEnlist.xaml;pgeStudent.xaml;windowLogin.xaml;Window1.xaml;windowMain.xaml;
+pageEnlist.xaml;pgeStudent.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;windowLogin.xaml;Window1.xaml;windowMain.xaml;
 
-True
+False
 
