@@ -125,3 +125,5 @@ C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\obj\Debug\WpfApplicatio
 C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\obj\Debug\Resources\Icons.baml
 C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\obj\Debug\pageStudentSubject.g.cs
+C:\Users\cyrik\Desktop\modern1\modernui2\WpfApplication1\obj\Debug\pageStudentSubject.baml

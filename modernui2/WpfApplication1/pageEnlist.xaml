@@ -54,24 +54,9 @@
                                     </DataGridTextColumn>
                                 </DataGrid.Columns>
                             </DataGrid>
-                            <Grid Margin="655,58,10,0" Background="#FFF9F9F9">
-                                <Canvas Margin="10,29,192,460">
-                                    <Label Name="Student_id" Content="Student ID:" FontSize="12" />
-                                    <TextBox Name="tb1" Width="187" Canvas.Left="78"/>
-                                </Canvas>
-                                <Canvas Margin="0,91,0,398">
-                                    <Label Content="Subject Code:" Canvas.Left="10"/>
-                                    <Label Content="Description:" Canvas.Left="133"/>
-                                    <Label Content="Units:" Canvas.Left="415"/>
-                                </Canvas>
-                                <Canvas Margin="10,123,10,366">
-                                    <TextBox Name="tb2" Width="115" Canvas.Top="2"/>
-                                    <TextBox Name="tb3" Width="274" Canvas.Left="120" Canvas.Top="2"/>
-                                    <TextBox Name="tb4" Width="52" Canvas.Left="399" Canvas.Top="2"/>
-                                </Canvas>
-                                <Canvas Margin="219,156,0,294">
-                                    
-                                </Canvas>
+                            <Grid Margin="655,58,10,0" Background="#FFF9F9F9" Loaded="Grid_Loaded">
+                                <Frame Name="sub_frame" NavigationUIVisibility="Hidden"/>
+                               
                             </Grid>
                         </Grid>
                     </TabItem>

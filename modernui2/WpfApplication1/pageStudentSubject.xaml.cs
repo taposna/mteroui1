@@ -16,24 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for pageEnlist.xaml
+    /// Interaction logic for pageStudentSubject.xaml
     /// </summary>
-    public partial class pageEnlist : Page
+    public partial class pageStudentSubject : Page
     {
-        public pageEnlist()
+        public pageStudentSubject()
         {
             InitializeComponent();
-        }
-
-        private void TabItem_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Grid_Loaded(object sender, RoutedEventArgs e)
-        {
-            pageStudentSubject pSB = new pageStudentSubject();
-            sub_frame.NavigationService.Navigate(pSB);
         }
     }
 }
