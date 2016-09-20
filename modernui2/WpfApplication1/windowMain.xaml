@@ -143,12 +143,6 @@
             <TabItem Header="GRADES" Margin="0,0,-2,0">
 
             </TabItem>
-            <TabItem Header="CURRICULUM" Margin="0,0,-2,0">
-
-            </TabItem>
-            <TabItem Header="SET SCHOOL YEAR" Margin="0,0,-2,0">
-
-            </TabItem>
         </TabControl>
     </Grid>
 </Controls:MetroWindow>

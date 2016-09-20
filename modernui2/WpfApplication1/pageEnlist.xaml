@@ -23,7 +23,7 @@
                                             <Setter Property="Template">
                                                 <Setter.Value>
                                                     <ControlTemplate TargetType="Button">
-                                                        <Border BorderThickness="1" BorderBrush="gray" CornerRadius="2">
+                                                        <Border BorderThickness="1" BorderBrush="#FFD8D8D8" CornerRadius="2">
                                                             <Grid Background="{TemplateBinding Background}">
                                                                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                                             </Grid>
@@ -43,6 +43,9 @@
                             </Canvas>
                             <DataGrid Margin="10,58,514,10">
                                 <DataGrid.Columns>
+                                    <DataGridCheckBoxColumn ElementStyle="{DynamicResource MetroDataGridCheckBox}" EditingElementStyle="{DynamicResource MetroDataGridCheckBox}" Binding="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Path=Select, Mode=OneWay}" Header="Select">
+                       
+                                    </DataGridCheckBoxColumn>
                                     <DataGridTextColumn Header="Code">
 
                                     </DataGridTextColumn>
