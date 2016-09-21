@@ -22,7 +22,7 @@
             <TextBox Name="tb4" Width="52" Canvas.Left="399" Canvas.Top="2"/>
         </Canvas>
         <Canvas Margin="226,156,10,332">
-            <Button Content="Add" Width="98" Canvas.Left="35" Height="29">
+            <Button Content="Add" Width="98" Canvas.Left="35" Height="29" Cursor="Hand">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="Transparent" />
@@ -46,7 +46,7 @@
                     </Style>
                 </Button.Style>
             </Button>
-            <Button Content="Drop" Width="98" Canvas.Left="138" Height="29">
+            <Button Content="Drop" Width="98" Canvas.Left="138" Height="29" Cursor="Hand">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="Transparent" />

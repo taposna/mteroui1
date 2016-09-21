@@ -83,6 +83,10 @@
                                     <ComboBox Canvas.Left="66" Canvas.Top="55" Width="190">
 
                                     </ComboBox>
+                                    <Button Style="{DynamicResource MetroCircleButtonStyle}" Canvas.Left="953" Canvas.Top="-20" Height="115" Width="114" BorderBrush="#FF00AEEF" Cursor="Hand">
+                                        <Image Source="images/save1.png" Height="101" Width="60"/>
+
+                                    </Button>
                                 </Canvas>
                             </GroupBox>
                         </Grid>

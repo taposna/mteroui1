@@ -16,7 +16,7 @@
                         <Grid Margin="10,11,10,10">
                             <Canvas Margin="10,10,571,540">
                                 <TextBox Name="search_sub" Width="428"/>
-                                <Button Name="sub_search" Content="Search" Canvas.Left="435" Width="120" Height="26">
+                                <Button Name="sub_search" Content="Search" Canvas.Left="435" Width="120" Height="26" Cursor="Hand">
                                     <Button.Style>
                                         <Style TargetType="Button">
                                             <Setter Property="Background" Value="Transparent" />
