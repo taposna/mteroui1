@@ -7,30 +7,84 @@
       xmlns:local="clr-namespace:WpfApplication1"
       mc:Ignorable="d"
       Title="pgeStudent" Width="1186.28" Height="683.245">
-    
+
     <Border BorderThickness="2" BorderBrush="#FF00456A" CornerRadius="10" Background="White">
         <Controls:MetroAnimatedTabControl>
-    <Grid>
-            <TabControl Margin="10,22,0,10">
-                    <TabItem Header="Student">
+            <Grid>
+                <TabControl Margin="10,22,0,10">
+                    <TabItem Header="View Records">
+
+                    </TabItem>
+
+                    <TabItem Header="Registration">
                         <Grid>
-                            <Label Content="inabno" Margin="188,136,150,142" FontSize="72"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="236*"/>
+                                <ColumnDefinition Width="931*"/>
+                            </Grid.ColumnDefinitions>
+                            <GroupBox Header="Personal Information" Margin="5,26,13,298" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
+                                <Canvas Margin="194,0,0,0">
+                                    <Label Name="student_no_label" Content="Student No:" Canvas.Left="6"/>
+                                    <Label Name="Fname_label" Content="First Name:" Canvas.Left="181"/>
+                                    <Label Name="Mname_label" Content="Middle Name:" Canvas.Left="426"/>
+                                    <Label Name="Lname_label" Content="Last Name:" Canvas.Left="670"/>
+                                    <TextBox Name="student_no" Width="157" Canvas.Top="28" Canvas.Left="10"/>
+                                    <TextBox Name="Fname" Width="223" Canvas.Top="28" Canvas.Left="185"/>
+                                    <TextBox Name="Mname" Width="222" Canvas.Top="28" Canvas.Left="430"/>
+                                    <TextBox Name="Lname" Width="223" Canvas.Top="28" Canvas.Left="674"/>
+                                    <Label Name="add_label" Content="Address:" Canvas.Left="10" Canvas.Top="63"/>
+                                    <TextBox Name="add_box" Width="827" Canvas.Top="63" Canvas.Left="70"/>
+                                    <GroupBox Header="Gender" Height="68" Canvas.Left="10" Margin="0" Canvas.Top="96" Width="206" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="1">
+                                        <ComboBox Margin="30,0,30,3">
+                                            <ComboBoxItem Content="Male">
+
+                                            </ComboBoxItem>
+                                            <ComboBoxItem Content="Female">
+
+                                            </ComboBoxItem>
+                                        </ComboBox>
+                                    </GroupBox>
+                                    <Label Name="dob_label" Content="Date Of Birth:" Canvas.Left="230" Canvas.Top="105"/>
+                                    <Label Name="pob_label" Content="Place Of Birth:" Canvas.Left="458" Canvas.Top="105"/>
+                                    <Label Name="con_label" Content="Contact No:" Canvas.Left="689" Canvas.Top="105"/>
+                                    <TextBox Name="dob" Canvas.Left="234" Canvas.Top="136" Width="204"/>
+                                    <TextBox Name="pob" Canvas.Left="462" Canvas.Top="136" Width="204"/>
+                                    <TextBox Name="acon_no" Canvas.Left="693" Canvas.Top="136" Width="204"/>
+                                    <Label Name="tatay_label" Content="Farher's name:" Canvas.Left="230" Canvas.Top="167"/>
+                                    <Label Name="nanay_label" Content="Mother's name:" Canvas.Left="488" Canvas.Top="167"/>
+                                    <Label Name="natio_label" Content="Nationality:" Canvas.Left="745" Canvas.Top="167"/>
+                                    <TextBox Name="tatay_box" Canvas.Left="234" Canvas.Top="193" Width="250"/>
+                                    <TextBox Name="nanay_box" Canvas.Left="492" Canvas.Top="193" Width="250"/>
+                                    <TextBox Name="natio_box" Canvas.Left="749" Canvas.Top="193" Width="148"/>
+                                    <ComboBox Canvas.Left="10" Canvas.Top="193" Width="206">
+
+                                    </ComboBox>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox Header="Guardian Details" Margin="5,316,13,178" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
+                                <Canvas HorizontalAlignment="Right" Width="1134">
+                                    <Label Name="gLabel" Content="Guardian's Name:" Canvas.Left="6"/>
+                                    <Label Name="gadd" Content="Address:" Canvas.Left="333"/>
+                                    <Label Name="gcont" Content="Contact No::" Canvas.Left="902"/>
+                                    <TextBox Name="Gname" Canvas.Left="10" Canvas.Top="24" Width="308"/>
+                                    <TextBox Name="Gadd" Canvas.Left="337" Canvas.Top="24" Width="547"/>
+                                    <TextBox Name="Gcontact" Canvas.Left="906" Canvas.Top="24" Width="218"/>
+                                </Canvas>
+                            </GroupBox>
+                            <GroupBox Header="Year and Section" Margin="5,432,601,10" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
+                                <Canvas>
+                                    <TextBox Width="190" Canvas.Left="10" Canvas.Top="10"/>
+                                    <TextBox Width="190" Canvas.Left="218" Canvas.Top="10"/>
+                                    <TextBox Width="190" Canvas.Left="218" Canvas.Top="55"/>
+                                    <ComboBox Canvas.Left="10" Canvas.Top="55" Width="190">
+
+                                    </ComboBox>
+                                </Canvas>
+                            </GroupBox>
                         </Grid>
                     </TabItem>
-                    <TabItem Header="Student">
-                        <Grid>
-                            <Label Content="inabno2" Margin="188,136,150,142" FontSize="72"/>
-                        </Grid>
-                    </TabItem>
-                    <TabItem Header="Student">
-
-                </TabItem>
-                
-                <TabItem Header="Student">
-
-                </TabItem>
-            </TabControl>
-    </Grid>
+                </TabControl>
+            </Grid>
         </Controls:MetroAnimatedTabControl>
     </Border>
 </Page>
