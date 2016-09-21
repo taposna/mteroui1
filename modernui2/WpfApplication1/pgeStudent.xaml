@@ -73,10 +73,14 @@
                             </GroupBox>
                             <GroupBox Header="Year and Section" Margin="5,432,601,10" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
                                 <Canvas>
-                                    <TextBox Width="190" Canvas.Left="10" Canvas.Top="10"/>
-                                    <TextBox Width="190" Canvas.Left="218" Canvas.Top="10"/>
-                                    <TextBox Width="190" Canvas.Left="218" Canvas.Top="55"/>
-                                    <ComboBox Canvas.Left="10" Canvas.Top="55" Width="190">
+                                    <Label Content="label1" Canvas.Left="10" Canvas.Top="10"/>
+                                    <Label Content="label2" Canvas.Left="286" Canvas.Top="10"/>
+                                    <Label Content="label3" Canvas.Left="286" Canvas.Top="55"/>
+                                    <Label Content="label4" Canvas.Left="10" Canvas.Top="55"/>
+                                    <TextBox Width="190" Canvas.Left="66" Canvas.Top="10"/>
+                                    <TextBox Width="190" Canvas.Left="346" Canvas.Top="10"/>
+                                    <TextBox Width="190" Canvas.Left="346" Canvas.Top="55"/>
+                                    <ComboBox Canvas.Left="66" Canvas.Top="55" Width="190">
 
                                     </ComboBox>
                                 </Canvas>
