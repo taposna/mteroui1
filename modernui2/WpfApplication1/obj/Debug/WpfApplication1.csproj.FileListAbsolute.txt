@@ -220,3 +220,5 @@ C:\Users\badagila\Desktop\mteroui12\modernui2\WpfApplication1\obj\Debug\windowMa
 C:\Users\badagila\Desktop\mteroui12\modernui2\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\Users\badagila\Desktop\mteroui12\modernui2\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
 C:\Users\badagila\Desktop\mteroui12\modernui2\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\badagila\Desktop\mteroui12\modernui2\WpfApplication1\obj\Debug\pageHome.g.cs
+C:\Users\badagila\Desktop\mteroui12\modernui2\WpfApplication1\obj\Debug\pageHome.baml

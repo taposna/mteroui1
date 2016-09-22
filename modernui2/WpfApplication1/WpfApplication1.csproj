@@ -66,6 +66,9 @@
     <Compile Include="pageEnlist.xaml.cs">
       <DependentUpon>pageEnlist.xaml</DependentUpon>
     </Compile>
+    <Compile Include="pageHome.xaml.cs">
+      <DependentUpon>pageHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="pageStudentSubject.xaml.cs">
       <DependentUpon>pageStudentSubject.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
       <DependentUpon>windowMain.xaml</DependentUpon>
     </Compile>
     <Page Include="pageEnlist.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pageHome.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

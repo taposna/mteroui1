@@ -37,5 +37,11 @@ namespace WpfApplication1
             pageEnlist pgE = new pageEnlist();
             enlist.NavigationService.Navigate(pgE);
         }
+
+        private void TabItem_Loaded_2(object sender, RoutedEventArgs e)
+        {
+            pageHome phome = new pageHome();
+            home_frame.NavigationService.Navigate(phome);
+        }
     }
 }
