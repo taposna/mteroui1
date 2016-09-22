@@ -28,7 +28,7 @@
                                     <Label Name="Fname_label" Content="First Name:" Canvas.Left="181"/>
                                     <Label Name="Mname_label" Content="Middle Name:" Canvas.Left="426"/>
                                     <Label Name="Lname_label" Content="Last Name:" Canvas.Left="670"/>
-                                    <TextBox Name="student_no" Width="157" Canvas.Top="28" Canvas.Left="10"/>
+                                    <Label Name="student_no" Width="157" Canvas.Top="28" Canvas.Left="10" Height="26" BorderThickness="1" BorderBrush="#FFD5D5D5"/>
                                     <TextBox Name="Fname" Width="223" Canvas.Top="28" Canvas.Left="185"/>
                                     <TextBox Name="Mname" Width="222" Canvas.Top="28" Canvas.Left="430"/>
                                     <TextBox Name="Lname" Width="223" Canvas.Top="28" Canvas.Left="674"/>
