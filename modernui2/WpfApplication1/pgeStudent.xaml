@@ -16,7 +16,7 @@
 
                     </TabItem>
 
-                    <TabItem Header="Registration">
+                    <TabItem Header="Registration" Height="39" VerticalAlignment="Top">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="236*"/>
@@ -85,6 +85,10 @@
                                     </ComboBox>
                                     <Button Style="{DynamicResource MetroCircleButtonStyle}" Canvas.Left="953" Canvas.Top="-20" Height="115" Width="114" BorderBrush="#FF00AEEF" Cursor="Hand">
                                         <Image Source="images/save1.png" Height="101" Width="60"/>
+
+                                    </Button>
+                                    <Button Style="{DynamicResource MetroCircleButtonStyle}" Canvas.Left="805" Canvas.Top="-20" Height="115" Width="114" BorderBrush="#FF00AEEF" Cursor="Hand">
+                                        <Image Source="images/reset.png" Height="115" Width="83"/>
 
                                     </Button>
                                 </Canvas>
