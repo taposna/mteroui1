@@ -9,13 +9,20 @@
       Title="pageHome" Width="1186.28" Height="683.245">
 
     <Border BorderThickness="2" BorderBrush="#FF00456A" CornerRadius="10" Background="White">
-        
+
         <Grid>
             <GroupBox Header="Control Area" BorderThickness="2" BorderBrush="#FF00456A" Background="#FF00456A" Margin="33,202,33,33">
-                <Frame Name="con_page" NavigationUIVisibility="Hidden" Margin="61,152,61,11">
-                    
-                </Frame>            
-                </GroupBox> 
+                <Canvas>
+                    <Button Style="{DynamicResource MetroCircleButtonStyle}" Height="116" Width="117" Canvas.Left="61" BorderBrush="#FF00456A" Cursor="Hand">
+                        <Image Source="images/people.png" Height="104" Width="69"/>
+                    </Button>
+                    <Border Height="243" Width="987" Canvas.Left="61" Canvas.Top="131" BorderBrush="#FFC7C7C7" BorderThickness="1">
+                        <Frame Name="con_frame" NavigationUIVisibility="Hidden">
+
+                        </Frame>
+                    </Border>
+                </Canvas>
+            </GroupBox>
         </Grid>
     </Border>
 </Page>
