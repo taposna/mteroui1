@@ -16,7 +16,7 @@
 
                     </TabItem>
 
-                    <TabItem Header="Registration" Height="39" VerticalAlignment="Top">
+                    <TabItem Header="Registration">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="236*"/>

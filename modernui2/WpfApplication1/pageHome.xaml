@@ -16,6 +16,9 @@
                     <Button Style="{DynamicResource MetroCircleButtonStyle}" Height="116" Width="117" Canvas.Left="61" BorderBrush="#FF00456A" Cursor="Hand">
                         <Image Source="images/people.png" Height="104" Width="69"/>
                     </Button>
+                    <Button Style="{DynamicResource MetroCircleButtonStyle}" Height="116" Width="117" Canvas.Left="202" BorderBrush="#FF00456A" Cursor="Hand">
+                        <Image Source="images/calendar.png" Height="104" Width="69"/>
+                    </Button>
                     <Border Height="243" Width="987" Canvas.Left="61" Canvas.Top="131" BorderBrush="#FFC7C7C7" BorderThickness="1">
                         <Frame Name="con_frame" NavigationUIVisibility="Hidden">
 
