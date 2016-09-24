@@ -8,21 +8,23 @@
       mc:Ignorable="d"
       Title="pgeStudent" Width="1186.28" Height="683.245">
 
+
     <Border BorderThickness="2" BorderBrush="#FF00456A" CornerRadius="10" Background="White">
         <Controls:MetroAnimatedTabControl>
             <Grid>
                 <TabControl Margin="10,22,0,10">
-                    <TabItem Header="View Records" >
+                    <TabItem Header="Registration" Loaded="TabItem_Loaded">
 
-                    </TabItem>
-
-                    <TabItem Header="Registration">
                         <Grid>
+
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="236*"/>
-                                <ColumnDefinition Width="931*"/>
+                                <ColumnDefinition Width="45*"/>
+                                <ColumnDefinition Width="176*"/>
+                                <ColumnDefinition Width="15*"/>
+                                <ColumnDefinition Width="19*"/>
+                                <ColumnDefinition Width="911*"/>
                             </Grid.ColumnDefinitions>
-                            <GroupBox Header="Personal Information" Margin="5,26,13,298" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
+                            <GroupBox Header="Personal Information" Margin="5,26,13,298" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="5">
                                 <Canvas Margin="194,0,0,0">
                                     <Label Name="student_no_label" Content="Student No:" Canvas.Left="6" Foreground="#FF0088FF"/>
                                     <Label Name="Fname_label" Content="First Name:" Canvas.Left="181" Foreground="#FF0088FF"/>
@@ -61,7 +63,7 @@
                                     </ComboBox>
                                 </Canvas>
                             </GroupBox>
-                            <GroupBox Header="Guardian Details" Margin="5,316,13,178" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
+                            <GroupBox Header="Guardian Details" Margin="5,316,13,178" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="5">
                                 <Canvas HorizontalAlignment="Right" Width="1134">
                                     <Label Name="gLabel" Content="Guardian's Name:" Canvas.Left="6" Foreground="#FF0088FF"/>
                                     <Label Name="gadd" Content="Address:" Canvas.Left="333" Foreground="#FF0088FF"/>
@@ -71,7 +73,7 @@
                                     <TextBox Name="Gcontact" Canvas.Left="906" Canvas.Top="24" Width="218"/>
                                 </Canvas>
                             </GroupBox>
-                            <GroupBox Header="Year and Section" Margin="5,432,601,10" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="2">
+                            <GroupBox Header="Year and Section" Margin="5,432,601,10" Background="#FF00456A" BorderBrush="#FF00456A" BorderThickness="2" Grid.ColumnSpan="5">
                                 <Canvas>
                                     <Label Content="label1" Canvas.Left="10" Canvas.Top="10" Foreground="#FF0088FF"/>
                                     <Label Content="label2" Canvas.Left="286" Canvas.Top="10" Foreground="#FF0088FF"/>
@@ -95,8 +97,26 @@
                             </GroupBox>
                         </Grid>
                     </TabItem>
+                    <TabItem Header="Manage Studens" >
+                        <Canvas Margin="0,20,16,6" HorizontalAlignment="Right" Width="1150">
+                            <ComboBox Width="216">
+
+                            </ComboBox>
+                            <TextBox Width="764" Canvas.Left="221"/>
+                            <Button Content="Search" Canvas.Left="993" Width="155" Height="26" Background="#FF0088FF" Foreground="White">
+
+                            </Button>
+                            <Button Content="Refresh" Canvas.Left="993" Width="155" Height="26" Background="#FF0088FF" Foreground="White" Canvas.Top="31">
+
+                            </Button>
+                            <DataGrid Height="493" Width="1150" Canvas.Top="77">
+
+                            </DataGrid>
+                        </Canvas>
+                    </TabItem>
                 </TabControl>
             </Grid>
         </Controls:MetroAnimatedTabControl>
     </Border>
+
 </Page>

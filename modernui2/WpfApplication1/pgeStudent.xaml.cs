@@ -18,11 +18,17 @@ namespace WpfApplication1
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
+    /// 
     public partial class pgeStudent : Page
     {
         public pgeStudent()
         {
             InitializeComponent();
+
+        }
+        private void TabItem_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
