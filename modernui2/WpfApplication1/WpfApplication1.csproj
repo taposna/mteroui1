@@ -69,9 +69,6 @@
     <Compile Include="pageHome.xaml.cs">
       <DependentUpon>pageHome.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pageStudentSubject.xaml.cs">
-      <DependentUpon>pageStudentSubject.xaml</DependentUpon>
-    </Compile>
     <Compile Include="pgeStudent.xaml.cs">
       <DependentUpon>pgeStudent.xaml</DependentUpon>
     </Compile>
@@ -86,10 +83,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="pageHome.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="pageStudentSubject.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -187,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

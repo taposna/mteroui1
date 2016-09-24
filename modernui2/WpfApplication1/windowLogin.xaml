@@ -19,8 +19,8 @@
         <Grid Margin="0,0,0,215">
             <Image  Source="images/new_logo1.png"/>
         </Grid>
-        <Grid Margin="10,289,10,10">
-            <Border BorderBrush="#FF00B9D5" Background="#FF00456A" BorderThickness="2" CornerRadius="10">
+        <Grid Margin="10,269,10,30">
+            <Border BorderBrush="#FF00B9D5" Background="#FF00456A" BorderThickness="2" CornerRadius="10" Margin="0,2,0,-2">
                 <Grid Margin="36,-16,36,77">
                     <Image Source="images/reg.png" Margin="2,20,-2,16"/>
                     <Canvas Margin="-16,94,-16,-69">
@@ -51,6 +51,9 @@
                     </Canvas>
                 </Grid>
             </Border>
+        </Grid>
+        <Grid Margin="10,449,10,0">
+            <Label  Content="POWERED BY: REPUBLIC OF CODERS (STUDENT OF ACLC)" Foreground="#FF024366"/>
         </Grid>
     </Grid>
 </Controls:MetroWindow>

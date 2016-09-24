@@ -9,72 +9,59 @@
       Title="pageEnlist" Width="1186.28" Height="683.245">
 
     <Border BorderThickness="2" BorderBrush="#FF00456A" CornerRadius="10" Background="White">
-        <Controls:MetroAnimatedTabControl>
-            <Grid>
-                <TabControl Margin="10,22,10,10">
-                    <TabItem Header="Subjects " Loaded="TabItem_Loaded">
-                        <Grid Margin="10,11,10,10">
-                            <Canvas Margin="10,10,571,540">
-                                <TextBox Name="search_sub" Width="428"/>
-                                <Button Name="sub_search" Content="Search" Canvas.Left="435" Width="120" Height="26" Cursor="Hand">
-                                    <Button.Style>
-                                        <Style TargetType="Button">
-                                            <Setter Property="Background" Value="Transparent" />
-                                            <Setter Property="Template">
-                                                <Setter.Value>
-                                                    <ControlTemplate TargetType="Button">
-                                                        <Border BorderThickness="1" BorderBrush="#FFD8D8D8" CornerRadius="2">
-                                                            <Grid Background="{TemplateBinding Background}">
-                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                                            </Grid>
-                                                        </Border>
-                                                    </ControlTemplate>
-                                                </Setter.Value>
-                                            </Setter>
-                                            <Style.Triggers>
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Background" Value="#FF037a93"/>
-                                                    <Setter Property="Foreground" Value="#FFFFFFFF"/>
-                                                </Trigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </Button.Style>
-                                </Button>
-                            </Canvas>
-                            <DataGrid Margin="10,58,514,10">
-                                <DataGrid.Columns>
-                                    <DataGridCheckBoxColumn ElementStyle="{DynamicResource MetroDataGridCheckBox}" EditingElementStyle="{DynamicResource MetroDataGridCheckBox}" Binding="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Path=Select, Mode=OneWay}" Header="Select">
-                       
-                                    </DataGridCheckBoxColumn>
-                                    <DataGridTextColumn Header="Code">
+        <Grid Margin="28,32,28,30">
+            <Canvas Margin="0,0,518,506">
+                <TextBox Width="194" BorderBrush="#FF0088FF" Foreground="#FF0088FF" CaretBrush="#FF0088FF"/>
+                <Button Style="{DynamicResource MetroCircleButtonStyle}" Canvas.Left="196" BorderThickness="1" BorderBrush="#FF0088FF" Height="35" Width="35" Canvas.Top="-4">
+                    <Image Source="images/search.png" Height="22" Width="22"/>
+                </Button>
+                <Label Content="First Name:" Canvas.Top="37" Foreground="#FF0088FF"/>
+                <Label Content="Middle Name:" Canvas.Top="37" Foreground="#FF0088FF" Canvas.Left="215"/>
+                <Label Content="Last Name:" Canvas.Top="37" Foreground="#FF0088FF" Canvas.Left="423"/>
+                <TextBox Canvas.Top="68" Width="194"/>
+                <TextBox Canvas.Left="215" Canvas.Top="68" Width="191"/>
+                <TextBox Canvas.Left="423" Canvas.Top="68" Width="185"/>
+            </Canvas>
+            <GroupBox Header="Enrolled Subjects" Margin="0,111,518,10">
+                <Canvas Margin="10,10,8,0">
+                    <DataGrid Height="447" Width="578" BorderBrush="#FFB9B9B9">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Subject code">
 
-                                    </DataGridTextColumn>
-                                    <DataGridTextColumn Header="Description" Width="350">
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Description">
 
-                                    </DataGridTextColumn>
-                                    <DataGridTextColumn Header="Units">
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Units">
 
-                                    </DataGridTextColumn>
-                                </DataGrid.Columns>
-                            </DataGrid>
-                            <Grid Margin="655,58,10,0" Background="#FFF9F9F9" Loaded="Grid_Loaded">
-                                <Frame Name="sub_frame" NavigationUIVisibility="Hidden"/>
-                               
-                            </Grid>
-                        </Grid>
-                    </TabItem>
-                    <TabItem Header="Student ">
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Status">
 
-                    </TabItem>
-                    <TabItem Header="Student ">
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Canvas>
+            </GroupBox>
+            <Canvas Margin="648,111,0,0">
+                <ComboBox Canvas.Top="-44" Width="182">
+                    
+                </ComboBox>
+                <GroupBox Header="second chance" Height="506" Margin="0" Width="478">
+                    <DataGrid>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Add">
+                                
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Subject Code">
 
-                    </TabItem>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="Description">
 
-                    <TabItem Header="Student ">
-
-                    </TabItem>
-                </TabControl>
-            </Grid>
-        </Controls:MetroAnimatedTabControl>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </GroupBox>
+            </Canvas>
+        </Grid>
     </Border>
 </Page>

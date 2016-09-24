@@ -32,8 +32,7 @@ namespace WpfApplication1
 
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            pageStudentSubject pSB = new pageStudentSubject();
-            sub_frame.NavigationService.Navigate(pSB);
+           
         }
     }
 }
