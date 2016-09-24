@@ -141,8 +141,8 @@
             <TabItem Header="ENLISTMENTS" Margin="0,0,-2,0" Loaded="TabItem_Loaded_1">
                 <Frame Name="enlist" NavigationUIVisibility="Hidden" Margin="-16,-2,-2,-2" HorizontalAlignment="Right" Width="1187"/>
             </TabItem>
-            <TabItem Header="GRADES" Margin="0,0,-2,0">
-
+            <TabItem Header="GRADES" Margin="0,0,-2,0" Loaded="TabItem_Loaded_3">
+                <Frame Name="grades_frame" NavigationUIVisibility="Hidden" Margin="-16,-2,-2,-2" HorizontalAlignment="Right" Width="1187"/>
             </TabItem>
         </TabControl>
     </Grid>

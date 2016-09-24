@@ -43,5 +43,11 @@ namespace WpfApplication1
             pageHome phome = new pageHome();
             home_frame.NavigationService.Navigate(phome);
         }
+
+        private void TabItem_Loaded_3(object sender, RoutedEventArgs e)
+        {
+            pageGrades pg = new pageGrades();
+            grades_frame.NavigationService.Navigate(pg);
+        }
     }
 }

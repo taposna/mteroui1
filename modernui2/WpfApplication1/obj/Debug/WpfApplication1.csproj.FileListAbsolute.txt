@@ -286,3 +286,5 @@ C:\Users\cyrik\Desktop\one\modernui2\WpfApplication1\obj\Debug\windowMain.baml
 C:\Users\cyrik\Desktop\one\modernui2\WpfApplication1\obj\Debug\WpfApplication1.g.resources
 C:\Users\cyrik\Desktop\one\modernui2\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
 C:\Users\cyrik\Desktop\one\modernui2\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\cyrik\Desktop\one\modernui2\WpfApplication1\obj\Debug\pageGrades.g.cs
+C:\Users\cyrik\Desktop\one\modernui2\WpfApplication1\obj\Debug\pageGrades.baml
